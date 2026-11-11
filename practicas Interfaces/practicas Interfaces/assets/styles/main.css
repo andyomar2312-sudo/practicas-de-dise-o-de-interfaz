@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --primary-color: #69A2D6;
+    --secondary-color: #5786B3;
+    --tertiary-color: #43688A;
+
+    --danger-color:#D669C2;
+    --warning-color:#D66F69;
+    --succes-color:#81D669;
+    --info-color:#D6AD69;
+}
+
+/*
+barra de navegacion
+*/
+#navbar {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    background-color: white;
+    color: black;
+    font-family:"Alfa Slab One", serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+#navbar #header1{
+    margin-left:0px;
+    padding-left: 0px;
+    border: 0px;
+    color: var(--primary-color)
+}
+
+#navbar #header2{
+    margin-left:0px;
+    padding-left: 0px;
+    border: 0px;
+    color: var(--secondary-color)
+}
+
+#navbar > header {
+    justify-items: center;
+    align-items: center;
+    display: flex;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav>ul>li>* {
+    display: inline;
+    text-decoration: none;
+    font-size:large;
+    color: black;
+}
+/*
+Display principal de vehiculo
+*/
+
+.display-ver{
+    background-color: var(--tertiary-color);
+    padding-bottom: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.title{
+    font-size: xx-large;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    
+}
+
+.more-info-btn{
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    border: 0px;
+    color: white;
+    font-size: large;
+    padding: 12px;
+    font-weight: 100;
+}
+
+.sub-icon{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding-left: 4px;
+    justify-items: center;
+}
+
+.icon-text-info img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.icon-text-info{
+    font-family: "Jost";
+    color:white;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    margin-top:8px;
+    margin-bottom: 8px;
+}
+
+.central-image img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0% auto;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+/*
+TABLETS
+*/
+@media screen and (min-width: 640px){
+    #navbar{
+        flex-direction: row;
+        padding-left: 32px;
+        padding-right: 32px;
+        background-color: orange;
+    }
+
+    nav>ul>li>a{
+        font-size: medium;
+    }
+
+    .display-ver{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50% 50%;
+
+    }
+
+    .title{
+        background-color: red;
+    }
+
+    .button-container{
+        background-color: yellow;
+    }
+
+    .sub-icon{
+        background-color: yellowgreen;
+    }
+    .central-image{
+        background-color: aquam;
+    }
+}
+/*
+COMPUTADORES Y MAS 
+*/
+@media screen and (min-width: 1080px){
+    #navbar{
+        background-color: pink;
+    }
+    
+}
