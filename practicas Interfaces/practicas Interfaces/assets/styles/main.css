@@ -64,6 +64,7 @@ nav>ul>li>* {
     font-size:large;
     color: black;
 }
+
 /*
 Display principal de vehiculo
 */
@@ -128,6 +129,94 @@ Display principal de vehiculo
     display: flex;
     justify-content: center;
 }
+
+.services-container {
+    background-color: var( -- tertiary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.services-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nunito';
+}
+.services-title>span {
+    text-align: center;
+    font-family: "Jost";
+}
+.service-elements {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-top:48px ;
+    
+}
+.service-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+}
+.service-element>img {
+    width: 280px;
+    height: auto
+}
+.service-element>span {
+    width: 280px;
+    height: auto
+
+}
+
+.primary-button {
+    background-color: var( -- primary-color);
+    border-radius: 8px;
+    border: 0px;
+    color: white;
+    font-size: large;
+    padding: 12px;
+    font-weight: 500;
+}
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+}
+.contact-us-from-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.contact-us-from-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}.contact-us-from-container>form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 100%;
+}
+
+.text-input{
+    height: 36px;
+}
+.text-input:focus{
+    outline:#69A2D6;
+}
+
+.checkbox-input {
+    display: flex;
+    align-content: center;
+    row-gap: 8px;
+}
+
+.checkbox- input>span {
+    margin-right: 4px;
+}
 /*
 TABLETS
 */
@@ -164,6 +253,14 @@ TABLETS
     }
     .central-image{
         background-color: aquam;
+    }
+    .service-elements{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .service-element>img{
+        width: 340px;
     }
 }
 /*
